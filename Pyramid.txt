@@ -1,7 +1,7 @@
 import java.util.*;
 import java.text.*;
 
-class Test 
+class Pyramid 
 {
 	public static void main(String[] args){   
 	Scanner scan=new Scanner(System.in);
