@@ -4,7 +4,7 @@ class Hi extends Thread{
 		System.out.println("Hi");
 		}
 		try{
-			Thread.sleep(1000);
+		Thread.sleep(1000);
 			}
 		catch(Exception e){}
 	}
@@ -12,10 +12,10 @@ class Hi extends Thread{
 class Hello extends Thread{
 	public void run(){
 		for (int i=0;i<5;i++){
-			System.out.println("Hello");
+		System.out.println("Hello");
 		}
 		try{
-			Thread.sleep(1000);
+		Thread.sleep(1000);
 			}
 		catch(Exception e){}
 	}
