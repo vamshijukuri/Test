@@ -16,24 +16,24 @@ class Fileio2 {
 		 
 		 
 		/* String s="hello Java";
-	     OutputStream OS=new FileOutputStream(path);
-	     OS.write(s.getBytes());
-	     OS.close();*/
+	           OutputStream OS=new FileOutputStream(path);
+	           OS.write(s.getBytes());
+	           OS.close();                                        */
 		 
 		/* BufferedReader br=new BufferedReader(new InputStreamReader(new FileInputStream(path)));
-	     String firstline=br.readLine();
-	     br.close();
-	     System.out.println("read a line:"+firstline);*/
+	           String firstline=br.readLine();
+	           br.close();
+	           System.out.println("read a line:"+firstline);      */
 		 
 		 URL url=new URL("https://en.wikipedia.org/wiki/Java_(programming_language)");
-         InputStream is=url.openStream();
-         BufferedReader br=new BufferedReader(new InputStreamReader(is));
-         String s=br.readLine();
-         while(s!=null) {
+                 InputStream is=url.openStream();
+                 BufferedReader br=new BufferedReader(new InputStreamReader(is));
+                 String s=br.readLine();
+                 while(s!=null) {
         	 System.out.println(s);
         	 s=br.readLine();
          }
-         System.out.println("Done Reading!");
+               System.out.println("Done Reading!");
 	}
 	              
 }
