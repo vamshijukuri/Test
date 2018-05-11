@@ -7,15 +7,6 @@ import java.io.InputStreamReader;
 class Fileio {
 				public static void main(String[] args)throws IOException
 				{
-				FileInputStream fis = new FileInputStream("F:/welcome.txt");
-				int size = fis.available();
-				byte[] b = new byte[size];
-				fis.read(b);
-				String data = new String(b);
-				System.out.println(data);
-				
-				fis.close();
-
 				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 				FileOutputStream fos = new FileOutputStream("F:/welcome.txt", true);
 				System.out.print("Enter Data :");
@@ -24,6 +15,15 @@ class Fileio {
 				fos.write(b1);
 				fos.close();
 				br.close();
+				
+				FileInputStream fis = new FileInputStream("F:/welcome.txt");
+				System.out.println("Your Data Is:");
+				int size = fis.available();
+				byte[] b = new byte[size];
+				fis.read(b);
+				String data = new String(b);
+				System.out.println(data);
+				fis.close();
 				}
 				
 	}
