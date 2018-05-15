@@ -1,0 +1,30 @@
+package collections;
+
+import java.util.ArrayList;
+
+public class collections {
+	public static void main(String[] args) {
+	try {
+	ArrayList<String> al=new ArrayList<String>();
+	al.add("java");
+	al.add("sql");
+	al.add("java script");
+	al.add("html");
+	al.add("Angular");
+	al.add("Spring");
+	al.add("Bootstrap");
+	al.remove("Spring");
+	al.remove(2);
+	al.add(4,"jdbc");
+	
+	for(String str : al) {
+        	System.out.println("Welcome : "+str);
+	}
+	        System.out.println("Size of an array :"+al.size());
+	        System.out.println(al);
+	}
+    catch (Exception e){
+			System.out.println("some error in the insertion :"+e);
+		}
+	}
+}
